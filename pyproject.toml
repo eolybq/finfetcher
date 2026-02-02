@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finfetcher"
+version = "0.1.0"
+description = "A robust wrapper around yfinance for market-aware financial data fetching."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Vaclav Jez", email = "jez.vasek@gmail.com"} 
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial",
+]
+dependencies = [
+    "pandas>=2.0.0",
+    "yfinance>=0.2.0",
+    "pytz>=2023.3",
+    "numpy>=1.20.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jezva/fin_fetcher"
+"Bug Tracker" = "https://github.com/jezva/fin_fetcher/issues"
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]  # Enable pycodestyle errors(E), flakes8(F), isort(I), warnings(W)
+ignore = []
+
+[tool.pyright]
+include = ["src"]
+exclude = ["**/node_modules", "**/__pycache__", "tests"]
+reportMissingImports = true
+reportMissingTypeStubs = false
+pythonVersion = "3.10"
