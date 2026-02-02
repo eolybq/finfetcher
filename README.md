@@ -2,8 +2,8 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/finfetcher.svg)](https://pypi.org/project/finfetcher/)
 [![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)](#)
-[![License](https://img.shields.io/pypi/l/finfetcher)](https://github.com/jezva/fin_fetcher/blob/main/LICENSE)
-[![Tests](https://github.com/jezva/fin_fetcher/actions/workflows/python-package.yml/badge.svg)](https://github.com/jezva/fin_fetcher/actions)
+[![License](https://img.shields.io/pypi/l/finfetcher)](https://github.com/eolybq/fin_fetcher/blob/main/LICENSE)
+[![Tests](https://github.com/eolybq/fin_fetcher/actions/workflows/python-package.yml/badge.svg)](https://github.com/eolybq/fin_fetcher/actions)
 
 > **Quick Summary:** A robust Python library for fetching clean, market-aware historical financial data. It acts as a smart wrapper around `yfinance`, automatically handling asset-specific market hours and timezones to ensure data integrity for quantitative modeling and backtesting.
 
