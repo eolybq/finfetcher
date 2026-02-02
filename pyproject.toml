@@ -26,8 +26,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/eolybq/fin_fetcher"
-"Bug Tracker" = "https://github.com/eolybq/fin_fetcher/issues"
+"Homepage" = "https://github.com/eolybq/finfetcher"
+"Bug Tracker" = "https://github.com/eolybq/finfetcher/issues"
 
 [tool.ruff]
 line-length = 88
