@@ -17,7 +17,7 @@ When fetching daily data during active market hours, standard tools often return
 1.  **Identifying the asset's exchange timezone** (e.g., NYSE vs. Tokyo SE vs. Crypto).
 2.  **Checking the exact market status** relative to the server time.
 3.  **Automatically filtering out** the current day's row if the market hasn't closed yet.
-4.  **Calculating the valid `target_date`** (next trading day) for forecasting targets.
+4.  **Calculating the valid `target_date`** (next trading day) for forecasting targets. It is usable for production (live deplyoment) needs when predicting for the upcoming day (with fetched training data till today).
 
 ---
 
