@@ -6,12 +6,17 @@ This section details the classes and methods available in `finfetcher`.
 
 The core class of the library.
 
-::: finfetcher.core.DataFetcher
+::: finfetcher.DataFetcher
     options:
+      # Merge __init__ arguments into the class documentation
+      merge_init_into_class: true
+      # Show just "DataFetcher", not "finfetcher.core.DataFetcher"
+      show_root_full_path: false
+      # Show the category (e.g., "Class") label
+      show_category_heading: true
+      # Only show explicit members we want (no need to list __init__ anymore)
       members:
-        - __init__
         - get_data
-      show_root_heading: true
       show_source: true
 
 ## Exceptions

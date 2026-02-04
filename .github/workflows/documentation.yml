@@ -34,10 +34,21 @@ jobs:
       - name: Build MkDocs
         run: mkdocs build
 
+      - name: Organize for Subdirectory Deployment
+        run: |
+          # Vytvoříme složku pro finální artefakt
+          mkdir _deployment
+          
+          # Přesuneme vygenerovaný web do podsložky 'docs'
+          mv site _deployment/docs
+          
+          # Vytvoříme jednoduché přesměrování z rootu na /docs/
+          echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=docs/"></head><body>Redirecting to <a href="docs/">docs/</a>...</body></html>' > _deployment/index.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'site'
+          path: '_deployment'
 
   deploy:
     environment:
