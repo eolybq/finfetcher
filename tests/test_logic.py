@@ -29,8 +29,8 @@ class TestCleaningLogic(unittest.TestCase):
         mock_now = ny_tz.localize(datetime(2023, 10, 27, 15, 30))
 
         # Configure the mock to return our specific "now" when now(tz) is called
-        mock_datetime.now.side_effect = (
-            lambda tz=None: mock_now.astimezone(tz) if tz else mock_now
+        mock_datetime.now.side_effect = lambda tz=None: (
+            mock_now.astimezone(tz) if tz else mock_now
         )
 
         cleaned_df = get_complete_close(
@@ -55,8 +55,8 @@ class TestCleaningLogic(unittest.TestCase):
         ny_tz = pytz.timezone("America/New_York")
         mock_now = ny_tz.localize(datetime(2023, 10, 27, 17, 00))
 
-        mock_datetime.now.side_effect = (
-            lambda tz=None: mock_now.astimezone(tz) if tz else mock_now
+        mock_datetime.now.side_effect = lambda tz=None: (
+            mock_now.astimezone(tz) if tz else mock_now
         )
 
         cleaned_df = get_complete_close(
@@ -84,8 +84,8 @@ class TestCleaningLogic(unittest.TestCase):
         utc_tz = pytz.timezone("UTC")
         mock_now = utc_tz.localize(datetime(2023, 10, 27, 10, 00))
 
-        mock_datetime.now.side_effect = (
-            lambda tz=None: mock_now.astimezone(tz) if tz else mock_now
+        mock_datetime.now.side_effect = lambda tz=None: (
+            mock_now.astimezone(tz) if tz else mock_now
         )
 
         cleaned_df = get_complete_close(
