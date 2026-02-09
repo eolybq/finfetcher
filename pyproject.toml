@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "finfetcher"
-version = "0.1.0"
+version = "0.1.1"
 description = "A robust wrapper around yfinance for market-aware financial data fetching."
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
-  {name = "Vaclav Jez", email = "jez.vasek@gmail.com"} 
+  {name = "Václav Jež", email = "jez.vasek@gmail.com"} 
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
