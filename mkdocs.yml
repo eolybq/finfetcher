@@ -1,8 +1,8 @@
 site_name: FinFetcher
 site_description: A robust Python library for fetching clean, market-aware historical financial data.
-site_url: https://eolybq.github.io/finfetcher/docs/
-repo_url: https://github.com/eolybq/finfetcher
-repo_name: eolybq/finfetcher
+site_url: https://yezdata.github.io/finfetcher/docs/
+repo_url: https://github.com/yezdata/finfetcher
+repo_name: yezdata/finfetcher
 edit_uri: edit/main/docs/
 
 theme:

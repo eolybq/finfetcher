@@ -3,7 +3,7 @@
 **FinFetcher** is a robust Python library designed for quantitative analysts and developers who need clean, market-aware historical financial data. It acts as a smart wrapper around `yfinance`, solving common issues with incomplete daily candles and timezone mismatches.
 
 [![PyPI version](https://img.shields.io/pypi/v/finfetcher.svg)](https://pypi.org/project/finfetcher/)
-[![License](https://img.shields.io/github/license/eolybq/finfetcher)](https://github.com/eolybq/finfetcher/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/yezdata/finfetcher)](https://github.com/yezdata/finfetcher/blob/main/LICENSE)
 
 ---
 
